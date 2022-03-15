@@ -35,17 +35,23 @@
   조합으로 대부분 사용한다
 
 << spring framework의 특징
-1. 메모리를 적게 사용하는 경량이며, 스츠링이 자바 객체를 직접 관리
+1. 메모리를 적게 사용하는 경량이며, 스프링이 자바 객체를 직접 관리
+
 2. POJO(Plain Old Java Object : 가장 단순한 클래스) 방식의 프레임 워크
    - POJO : setter, getter 같은 클래스
+
 3. IOC(Inversion of Control : 제어의 역전)  
    // 개발의 흐름과 객체의 제어권을 개발자가 아닌 spring이 제어하는 것 (객체 생성 예시)
+
 4. DI(Dependency Injection : 의존성 투입) 
    // 객체 생성 시, 객체가 관리할 값을 넣어주는 것 (생성자, setter)
+
 5. AOP(Aspect-Oriented Programming) 지원
    // 후에 설명 
+
 6. myBatis, JPA, Hibernate 등의 데이터베이스 라이브러리 지원 
   // 위 3가지는 쿼리(.xml에 -> myBatis 방식)와 코드를 분리시키는 일을 한다
+
 7. 개념을 제대로 알지 못하면 코드분석조차 하기 힘듬 (선생님 생각) 
 
 **3, 4, 5는 spring의 대표적 특징 (+6번까지도 잘 알고 있기)
