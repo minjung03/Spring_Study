@@ -1,0 +1,32 @@
+3/21일 Spring 수업 정리
+
+<< 자동주입 
+ 
+autowire="byName/byType/constructor"
+
+ - 참조형 타입에만 적용가능(기본형은 불가능)
+ - 내부적으로는 Setter DI
+
+1) autowire="byName"
+- 멤버변수 중에 이름이 같은 bean을 찾아서 주입
+
+  ex)
+    <bean id="data1" class="kr.hs.study.beans.DataBean1"/>  <--- 내부적으로 setData1()메서드를 실행시켜 주입 
+    <bean id="t1" class="kr.hs.study.beans.TestBean1" autowire="byName"></bean>  
+
+
+
+2) autowire="byType" 
+- 멤버변수 중에 타입이 같은 bean을 찾아서 주입 
+- 동일한 타입의 bean이 여러개 있으면 오류 발생 (..matching bean but found 2..)
+
+  ex)
+    <bean class="kr.hs.study.beans.DataBean2"/>
+    <bean id="t2" class="kr.hs.study.beans.TestBean2" autowire="byType"></bean>
+
+
+3) autowire="constructor"
+- 생성자의 매개변수와 타입이 같은 bean을 찾아서 주입
+- 동일한 타입의 bean이 여러개 있으면 오류 발생
+
+---------------------------
