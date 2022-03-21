@@ -29,4 +29,8 @@ autowire="byName/byType/constructor"
 - 생성자의 매개변수와 타입이 같은 bean을 찾아서 주입
 - 동일한 타입의 bean이 여러개 있으면 오류 발생
 
+  ex)
+    <bean class="kr.hs.study.beans.DataBean3"/>
+    <bean id="t3" class="kr.hs.study.beans.TestBean3" autowire="constructor"/>
+
 ---------------------------
