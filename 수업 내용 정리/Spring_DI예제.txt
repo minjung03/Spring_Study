@@ -1,0 +1,23 @@
+<< 생성자 DI 예제
+
+    	<bean id="d1" class="kr.hs.study.beans.DataBean"/>   
+           
+    	<bean id="t1" class="kr.hs.study.beans.TestBean">
+    		<constructor-arg value="11" type="int"></constructor-arg>
+    		<constructor-arg value="11.11" type="double"></constructor-arg>
+    		<constructor-arg value="Wacom" ></constructor-arg>
+    		<constructor-arg ref="d1" index="3"></constructor-arg>
+    		<constructor-arg ref="d1" index="4"></constructor-arg>
+   	</bean>
+
+
+<< Setter DI 예제
+
+	<bean id="d3" class="kr.hs.study.beans.DataBean2"/>
+		
+	<bean id="t2" class="kr.hs.study.beans.TestBean2">
+		<property name="data1" value="22"></property>
+		<property name="data2" value="22.22"></property>
+		<property name="data3" ref="d3"></property>
+		<property name="data4" ref="d3"></property>
+	</bean>
