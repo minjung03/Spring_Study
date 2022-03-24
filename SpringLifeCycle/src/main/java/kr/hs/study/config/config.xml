@@ -19,7 +19,6 @@
 	
 	<bean id="t3" class="kr.hs.study.beans.TestBean1" init-method="initMethod"/>
 	<!-- init-method() : 생성자 이후 자동으로 실행되는 메서드를 설정하는 옵션 -->
-	
 	<bean id="t4" class="kr.hs.study.beans.TestBean1" destroy-method="destoryMethod"/>
 	
 	
