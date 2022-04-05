@@ -1,0 +1,37 @@
+3/22일 수업 정리
+
+
+<< 자동 주입 (지난시간 정리)
+
+1) autowire="byName"
+ - 멤버 변수 중에 이름이 동일한 bean을 찾아서 주입해라
+
+2) autowire="byType"
+ - 멤버 변수 중에 타입이 동일한 bean을 찾아서 주입해라
+ - 동일한 타입이 여러개 있다면 에러
+
+3) autowire="constructor"
+ - 생성자의 매개변수와 타입이 일치하는 bean을 찾아서 주입해라
+ - type으로 찾아가는거라 마찬가지로 동일한 타입이 여러개 있다면 에러
+
+** autowire 정말 많이 사용한다
+** xml에서 객체 생성 설정 방법은 끝
+
+
+----------------------------------------------
+Spring에서의 객체 생성 방법 3가지
+1)  .xml
+2)  .java
+3)  Annotation(@)
+
+
+<< java로 객체 생성 설정
+
+- AnnotationConfigApplicationContext 컨테이너 사용
+
+1. @Configuration : 객체를 생성하는 설정 파일이라 알려주는 것
+2. @Bean : 객체를 생성한다
+
+ * 메서드 이름 = 객체 이름
+ * 생성된 객체는 메서드 이름으로 Container에 저장
+ * 꺼내오는 것은 getBean()으로 xml 방법과 동일 
