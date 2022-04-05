@@ -22,7 +22,7 @@
 Spring에서의 객체 생성 방법 3가지
 1)  .xml
 2)  .java
-3)  Annotation
+3)  Annotation(@)
 
 
 << java로 객체 생성 설정
@@ -30,7 +30,7 @@ Spring에서의 객체 생성 방법 3가지
 - AnnotationConfigApplicationContext 컨테이너 사용
 
 1. @Configuration : 객체를 생성하는 설정 파일이라 알려주는 것
-2. @Bean : 아래 나오는 메서드를 실행해서 객체를 생성한다
+2. @Bean : 객체를 생성한다
 
  * 메서드 이름 = 객체 이름
  * 생성된 객체는 메서드 이름으로 Container에 저장
