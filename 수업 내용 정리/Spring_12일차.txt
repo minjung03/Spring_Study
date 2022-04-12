@@ -1,0 +1,20 @@
+4/12일 수업 정리
+
+<<Component
+: Bean 등록과 annotation을 모두 객체를 만들 java 파일에서 생성
+
+xml에서 --  <context:component-scan base-package="패키지명/>
+java에서 -- @ComponentScan(basepackages="패키지명) 
+               - 여러개 적고 싶으면 {}으로 묶기
+
+---------------------------------------------------------------------
+@Component : Bean을 생성해라
+@Autowired : 동일한 타입을 찾아 자동 주입 해라
+@Qualifier : 동일한 타입과 이름을 찾아 자동 주입 해라
+@Lazy : getBean() 호출 시에만 Bean을 생성해라
+@Scope("prototype") : getBean() 호출 시마다 새로운 Bean을 생성해라
+
+
+
+
+<< Component 자동 주입
