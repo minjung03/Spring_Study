@@ -5,7 +5,7 @@
 
 xml에서 --  <context:component-scan base-package="패키지명/>
 java에서 -- @ComponentScan(basepackages="패키지명) 
-               - 여러개 적고 싶으면 {}으로 묶기
+            * 여러개 적고 싶으면 {}으로 묶기
 
 ---------------------------------------------------------------------
 @Component : Bean을 생성해라
@@ -13,8 +13,3 @@ java에서 -- @ComponentScan(basepackages="패키지명)
 @Qualifier : 동일한 타입과 이름을 찾아 자동 주입 해라
 @Lazy : getBean() 호출 시에만 Bean을 생성해라
 @Scope("prototype") : getBean() 호출 시마다 새로운 Bean을 생성해라
-
-
-
-
-<< Component 자동 주입
