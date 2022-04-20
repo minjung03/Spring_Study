@@ -26,4 +26,9 @@ public class TestBean1 {
 		System.out.println("string형 매개변수 2개 호출");
 	}
 	
+	public int method3() {
+		System.out.println("int값 리턴이 있는 메서드 호출");
+		return 0;
+	}
+	
 }
