@@ -1,0 +1,17 @@
+4/26일 Spring 수업 정리
+
+<< Spring에서의 DB 접속
+
+1. jdbc : 자바에서 db프로그램을 하기 위해 사용되는 api
+2. jdbc driver : db와 실제 통신을 담당하는 클라이언트
+  - 제품에 따라서 다름
+  1) mysql: com.mysql.jdbc.driver
+  2) oracle : oracle.jdbc.driver.OracleDriver
+
+3. 필요 라이브러리
+  1) spring jdbc
+  2) dbcp2
+  3) oracle driver: oracle6.jar -- 수동으로 설치하기(Build path->configure...->Libaries(tab)->apply external JARs->oracle의 jdbc 경로)
+
+4. JdbcTemplate : 실제 db에 필요한 query를 날리는, Spring에서 사용하는 라이브러리
+
