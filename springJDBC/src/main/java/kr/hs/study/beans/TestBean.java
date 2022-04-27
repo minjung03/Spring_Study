@@ -4,11 +4,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TestBean {
-	
+
 	// 테이블 속성 타입과 맞추어서 주기
 	private int data1;
 	private String data2;
-	
+
 	public int getData1() {
 		return data1;
 	}
@@ -21,7 +21,7 @@ public class TestBean {
 	public void setData2(String data2) {
 		this.data2 = data2;
 	}
-	
-	
+
+
 
 }

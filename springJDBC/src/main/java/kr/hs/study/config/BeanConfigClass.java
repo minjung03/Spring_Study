@@ -6,13 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import kr.hs.study.beans.TestBean;
-import kr.hs.study.dao.TestDAO;
-
 @Configuration
 @ComponentScan(basePackages = {"kr.hs.study.beans","kr.hs.study.dao"})
 public class BeanConfigClass {
-	
+
 	// DB 접속 정보(BasicDataSource 사용)
 	@Bean
 	public BasicDataSource source() {
@@ -23,12 +20,12 @@ public class BeanConfigClass {
 		source.setPassword("springOracle");
 		return source;
 	}
-	
+
 	// 데이터베이스 접속해서 실제 쿼리를 전달하는 bean을 등록
 	@Bean
 	public JdbcTemplate db(BasicDataSource source) {
 		JdbcTemplate db = new JdbcTemplate(source);
 		return db;
 	}
-	
+
 }
