@@ -47,7 +47,7 @@
    // 객체 생성 시, 객체가 관리할 값을 넣어주는 것 (생성자, setter)
 
 5. AOP(Aspect-Oriented Programming) 지원
-   // 관점 지향  
+   // 관점 지향 프로그래밍
 
 6. myBatis, JPA, Hibernate 등의 데이터베이스 라이브러리 지원 
   // 위 3가지는 쿼리(.xml에 -> myBatis 방식)와 코드를 분리시키는 일을 한다
