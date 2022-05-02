@@ -9,7 +9,7 @@
 
 << Spring에 대하여
 - JAVA기반의 웹 개발 프레임워크
-- 2003년 Nod Johnson이 발표 (C는 데니스 리치, Java는 제임스 고슬링 <<기본으로 알고있자)
+- 2003년 Rod Johnson이 발표 (C는 데니스 리치, Java는 제임스 고슬링 <<기본으로 알고있자)
 - 프레임워크(framework) : 프로그램을 작성할 때 뼈대가 되는 골격
 
 1. builder : 자바 소스를 실행할 수 있는 독립적인 형태로 변환하는 과정
@@ -47,7 +47,7 @@
    // 객체 생성 시, 객체가 관리할 값을 넣어주는 것 (생성자, setter)
 
 5. AOP(Aspect-Oriented Programming) 지원
-   // 후에 설명 
+   // 관점 지향  
 
 6. myBatis, JPA, Hibernate 등의 데이터베이스 라이브러리 지원 
   // 위 3가지는 쿼리(.xml에 -> myBatis 방식)와 코드를 분리시키는 일을 한다
