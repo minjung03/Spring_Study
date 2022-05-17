@@ -1,6 +1,9 @@
 package kr.hs.study.main;
 
+import java.util.List;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.dao.support.DaoSupport;
 
 import kr.hs.study.beans.TestBean;
 import kr.hs.study.config.BeanConfigClass;
@@ -13,8 +16,7 @@ public class mainClass {
 
 
 		// TestDAO 가져오기
-		TestDAO dbo = atx.getBean(TestDAO.class);
-
+		TestDAO dao = atx.getBean(TestDAO.class);
 		
 		/*
 		// TestBean 객체 bean1 만들어서 100, spring100 넣기
@@ -33,21 +35,28 @@ public class mainClass {
 		bean3.setData1(100);
 		bean3.setData2("testtest");
 
+		
 		// insert_data 호출
-		dbo.insert_data(bean1);
-		dbo.insert_data(bean2);
+		dao.insert_data(bean1);
+		dao.insert_data(bean2);
 		
 		// update_data 호출
-		dbo.update_data(bean3);
+		dao.update_data(bean3);
 
-		*/
-		
-		dbo.delete_data(100);
-		
+		// delete_data 호출
+		// dbo.delete_data(100);
+	
 		System.out.println("Insert!");
 		System.out.println("Update!");
-		System.out.println("Delete!");
+		// System.out.println("Delete!");
+		*/
 
+		List<TestBean> list = dao.select_data();
+		for(TestBean bean:list) {
+			System.out.println("data1 : "+bean.getData1());
+			System.out.println("data2 : "+bean.getData2());
+		}
+	
 		atx.close();
 
 	}

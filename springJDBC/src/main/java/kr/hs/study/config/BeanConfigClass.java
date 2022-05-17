@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 @Configuration
-@ComponentScan(basePackages = {"kr.hs.study.beans","kr.hs.study.dao"})
+@ComponentScan(basePackages = {"kr.hs.study.beans","kr.hs.study.dao", "kr.hs.study.mapper"})
 public class BeanConfigClass {
 
 	// DB 접속 정보(BasicDataSource 사용)

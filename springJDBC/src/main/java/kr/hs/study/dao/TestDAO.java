@@ -1,10 +1,13 @@
 package kr.hs.study.dao;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import kr.hs.study.beans.TestBean;
+import kr.hs.study.mapper.mapperClass;
 
 @Component
 public class TestDAO {
@@ -14,6 +17,9 @@ public class TestDAO {
 
 	@Autowired
 	JdbcTemplate db; // JdbcTemplate 타입의 bean을 찾아서 자동주입
+	
+	@Autowired
+	private mapperClass mapper;
 
 	// insert
 	
@@ -31,4 +37,11 @@ public class TestDAO {
 		String sql = "delete test where data1 = ?";
 		db.update(sql, data1);
 	}
+	
+	public List<TestBean> select_data(){
+		String sql = "select * from test";
+		List<TestBean> list = db.query(sql, mapper);
+		return list;
+	}
+	
 }
