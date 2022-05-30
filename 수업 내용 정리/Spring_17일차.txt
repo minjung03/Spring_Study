@@ -1,0 +1,9 @@
+5/30일 Spring 수업 정리
+
+- 프로젝트 생성 시에 패킹 jar -> war로 바꾸기
+- url에 프로젝트 이름까지 나오는 것을 context path라고 한다
+
+<< ViewResolver
+  - 사용자가 요청한 것에 대한 응답 view를 렌더링 하는 역할
+  prefix : 컨트롤러가 지정한 뷰 이름 앞에 붙인다
+  suffix : 컨트롤러가 지정한 뷰 이름 뒤에 붙인다
