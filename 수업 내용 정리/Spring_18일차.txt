@@ -1,0 +1,16 @@
+5/31일 Spring 수업 정리
+
+@RequestMapping(value="/test1", method=RequestMethod.GET) // 이렇게는 거의 사용 안한다
+** GetMapping(), PostMapping()를 더 많이 사용함
+
+--------------------------------------------------------------
+6/7일 Spring 수업 정리
+
+<< 파라미터 출력하기
+1. HttpRequest 
+2. WebRequest (HttpRequest를 확장한 클래스로 사용법은 동일)
+3. @PathVariable
+4. @ModelAttribute
+5. Model
+
+* Spring은 요청 방식에 따라 파라미터 출력 방식이 달라지지 않음
