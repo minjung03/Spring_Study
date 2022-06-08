@@ -1,0 +1,20 @@
+6/8일 Spring 수업 정리
+
+<< 파라미터 출력
+
+// 기본형
+1. HttpRequest 
+2. WebRequest (HttpRequest를 확장한 클래스로 사용법은 동일)
+3. @PathVariable
+4. @RequestParam
+
+// 참조형 (객체 사용 : Java 클래스를 거침)
+1. @ModelAttribute
+   1) 사용자의 요청 (파라미터)를 객체로 주입 받음
+   2) 전달되는 파라미터 이름과 bean의 동일한 이름의 property 자동 주입 
+   3) 이 어노테이션은 생략 가능
+
+** command object(커맨드 객체) : 파라미터 데이터를 객체로 주입하기 위해 만드는 객체를 말한다
+** servlet/jsp에서 사용자 요청이 발생하면, 사용자에 관한 모든 정보(접속 브라우저, 접속시간...)가 httpServletRequest영역에 자동으로 저장된다.
+
+2. Model -- 거의 많이 사용한다 
