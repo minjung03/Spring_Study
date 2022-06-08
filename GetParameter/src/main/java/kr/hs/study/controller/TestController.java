@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.WebRequest;
 
 @Controller
@@ -53,6 +54,19 @@ public class TestController {
 						@PathVariable String data3) {
 		
 		System.out.println(data1+" "+data2+" "+data3);	
+		return "result";
+	}
+	
+	
+	@GetMapping("/test5")
+	public String test5(@RequestParam int data1, 
+						@RequestParam int data2,
+						@RequestParam int[] data3) {
+		
+		System.out.println(data1+" "+data2);
+		for(int data : data3) {
+			System.out.println(data);
+		}
 		return "result";
 	}
 	
