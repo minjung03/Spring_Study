@@ -1,4 +1,9 @@
-@charset "EUC-KR";
-h1{
-	color:"red"
+@charset "UTF-8";
+
+a{
+	text-decoration: node;
+}
+a:hover {
+	text-decoration: node;
+	color : "red"
 }

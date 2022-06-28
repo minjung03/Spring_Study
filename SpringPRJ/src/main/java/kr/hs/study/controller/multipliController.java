@@ -3,6 +3,7 @@ package kr.hs.study.controller;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -14,14 +15,17 @@ public class multipliController {
 	public String multipli(){
 		return "multipli";
 	}
+
 	
-	@PostMapping("/submit")
-	public String submit(HttpServletRequest http){
-		int num = Integer.parseInt(http.getParameter("num"));
+	@PostMapping("/multipli_re")
+	public String submit2(int num, Model model){
+		String result="";
 		for(int i=1; i<=9; i++) {
-			System.out.println(num+"*"+i+"="+(num*i));
+			result += num+"*"+i+"="+(num*i)+"</br>";
 		}
-		return "submit";
+		model.addAttribute("result", result);
+		
+		return "re_multipli";
 	}
 	
 
