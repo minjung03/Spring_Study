@@ -1,0 +1,18 @@
+7/11일 Spring 수업 정리
+
+<< 파일 업로드에 필요한 라이브러리
+1.commons-fileupload
+2.imgscalr-lib
+
+<< servlet-context.xml에 설정
+1. 파일 업로드에 필요한 bean 설정(MultipartResolver)
+2. 파일 용량 설정
+3. 업로드된 파일이 저장될 디렉토리 설정
+
+<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> -- 1
+	<beans:property name="maxUploadSize" value="10000000"/> -- 2
+</beans:bean>
+
+<beans:bean id="uploadpath" class="java.lang.String">
+	<beans:constructor-arg value="c:\\springprj\\upload"></beans:constructor-arg> -- 3
+</beans:bean>
