@@ -8,8 +8,7 @@
 </head>
 <body>
 
-<a href="multipli">备备窜</a><br/>
-<a href="score">己利 备窍扁</a><br/>
+<%@ include file="../include/menu.jsp" %>
 
 </body>
 </html>
