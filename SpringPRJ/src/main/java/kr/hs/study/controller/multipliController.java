@@ -13,7 +13,7 @@ public class multipliController {
 	
 	@GetMapping("/multipli")
 	public String multipli(){
-		return "multipli";
+		return "multipli/multipli";
 	}
 
 	
@@ -25,7 +25,7 @@ public class multipliController {
 		}
 		model.addAttribute("result", result);
 		
-		return "re_multipli";
+		return "multipli/re_multipli";
 	}
 	
 

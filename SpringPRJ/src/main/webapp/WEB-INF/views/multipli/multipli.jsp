@@ -4,12 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>index.jsp</title>
-<link href="../../resources/css/main.css" rel="stylesheet">
+<title>multipli.jsp</title>
 </head>
 <body>
 
-<%@ include file="../include/menu.jsp" %>
+<form action="multipli_re" method="post">
+단을 입력하세요 : <input type="text" name="num"/>
+<button type="submit">제출</button>
+</form>
 
 </body>
 </html>

@@ -4,12 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>index.jsp</title>
-<link href="../../resources/css/main.css" rel="stylesheet">
+<title>re_multipli.jsp</title>
 </head>
 <body>
-
-<%@ include file="../include/menu.jsp" %>
-
+<h1>result</h1>
+<h2>${requestScope.result }</h2>
 </body>
 </html>

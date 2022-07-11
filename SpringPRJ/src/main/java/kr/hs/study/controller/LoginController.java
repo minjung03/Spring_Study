@@ -13,7 +13,7 @@ public class LoginController {
 
 	@GetMapping("/login")
 	public String login(){
-		return "login";
+		return "login/login";
 	}
 	
 	@PostMapping("/login_re")
@@ -28,7 +28,7 @@ public class LoginController {
 			System.out.println("로그인 실패");
 			return "redirect:/login"; // 되돌아가기
 		}
-		return "re_login";
+		return "login/re_login";
 	}
 	
 }

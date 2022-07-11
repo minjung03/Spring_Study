@@ -14,7 +14,7 @@ public class ScoreController {
 	
 	@GetMapping("/score")
 	public String score(){
-		return "score";
+		return "score/score";
 	}
 	
 	
@@ -24,7 +24,7 @@ public class ScoreController {
 		model.addAttribute("student", std);
 		model.addAttribute("student_sum", std.Sum());
 		model.addAttribute("student_avg", std.Avg());
-		return "re_score";
+		return "score/re_score";
 	}
 
 
