@@ -10,6 +10,7 @@ import kr.hs.study.dto.DataBean;
 public interface dataInterface {
 	
 	public void insert(DataBean bean);
+	public void update(DataBean bean);
 	public List<DataBean> select();
 
 }

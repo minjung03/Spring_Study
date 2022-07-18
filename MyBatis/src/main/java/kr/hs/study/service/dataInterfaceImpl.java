@@ -15,13 +15,19 @@ public class dataInterfaceImpl implements dataInterface {
 	@Autowired
 	private daoInterface dao;
 	
-	
+	@Override
 	public void insert(DataBean bean) {
 		dao.insert(bean);
 	}
 
+	@Override
 	public List<DataBean> select() {
 		return dao.select();
+	}
+
+	@Override
+	public void update(DataBean bean) {
+		dao.update(bean);
 	}
 
 }

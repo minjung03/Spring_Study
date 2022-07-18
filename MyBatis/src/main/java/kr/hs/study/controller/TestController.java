@@ -31,13 +31,24 @@ public class TestController {
 	
    @GetMapping("/read_data")
    public String read_data(Model model) {
-	   
+	  
       List<DataBean> list = dataIn.select();
       model.addAttribute("list", list);
       System.out.println(list.size());
       return "result2";
    }
-
-	   
+   
+	@GetMapping("/update_data")
+	public String update_data(){
+		return "update_data";
+	}
+   
+	@PostMapping("/update_pro")
+	public String update_pro(DataBean bean){
+		dataIn.update(bean);
+		System.out.println(bean.getData1()+" "+bean.getData2()+" "+bean.getData3());
+		return "result3";
+	}
+   
 	
 }
