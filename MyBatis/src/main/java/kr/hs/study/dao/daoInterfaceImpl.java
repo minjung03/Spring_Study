@@ -27,5 +27,10 @@ public class daoInterfaceImpl implements daoInterface {
 	public void update(DataBean bean) {
 		session.update("test.update_data", bean);
 	}
+
+	@Override
+	public void delete(String data1) {
+		session.delete("test.delete_data", data1);
+	}
 	
 }

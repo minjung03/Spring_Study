@@ -30,4 +30,9 @@ public class dataInterfaceImpl implements dataInterface {
 		dao.update(bean);
 	}
 
+	@Override
+	public void delete(String data1) {
+		dao.delete(data1);
+	}
+
 }

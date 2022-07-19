@@ -13,9 +13,9 @@
  	select * from test_tbl
  	</select>
  	
-<!--  	<delete id="delete_data" parameterType="java.lang.String">
- 	delete from test_tbl where data1 = #{}
- 	</delete> -->
+	<delete id="delete_data" parameterType="java.lang.String">
+ 	delete from test_tbl where data1 = #{data1}
+ 	</delete> 
  	
  	<update id="update_data" parameterType="kr.hs.study.dto.DataBean">
  	update test_tbl set data1=#{data1}, data2=#{data2}, data3=#{data3}

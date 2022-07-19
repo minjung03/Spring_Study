@@ -12,6 +12,6 @@
 <a href="input_data">input_data</a><br/>
 <a href="read_data">read_data</a><br/>
 <a href="update_data">update_data</a><br/>
-<a href="delete_data">delete_data</a><br/> <!-- data1 = 1인 것 삭제 -->
+<a href="delete_data?data1=4">delete_data</a><br/> <!-- data1 = 4인 것 삭제 -->
 </body>
 </html>
