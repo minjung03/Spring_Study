@@ -1,14 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="UTF-8"%>
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>index.jsp</title>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
 </head>
 <body>
-
-<%@ include file="include/menu.jsp" %>
-
+<h1>insert</h1>
 </body>
 </html>

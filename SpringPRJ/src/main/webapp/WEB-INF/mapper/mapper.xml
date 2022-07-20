@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="test"> <!-- 자바와 쿼리를 분리 -->
+ 	
+ 	<insert id="insert_data" parameterType="kr.hs.study.dto.DataBean">
+ 	insert into join_in values(#{userid}, #{userpass}, #{username}, #{useremail}, #{usertel})
+ 	</insert>
+  	
+ 	<select id="select_data" resultType="kr.hs.study.dto.DataBean">
+ 	select * from join_in
+ 	</select>
+ 	
+	<!-- <delete id="delete_data" parameterType="java.lang.String">
+ 	delete from test_tbl where data1 = #{data1}
+ 	</delete> 
+ 	
+ 	<update id="update_data" parameterType="kr.hs.study.dto.DataBean">
+ 	update test_tbl set data1=#{data1}, data2=#{data2}, data3=#{data3}
+ 	</update> -->
+ 	
+ 
+</mapper>       
