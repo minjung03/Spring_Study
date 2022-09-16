@@ -2,7 +2,7 @@
 
 * spring.io <- spring 공식 사이트 (북마크!) 
 
-- Spring와 Spring boot의 차의점 : 
+- Spring와 Spring boot의 차이점 : 
   Spring -처음부터 만드는 것 
   Spring boot -만들어진 것에 더하는 것
 
